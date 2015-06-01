@@ -12,4 +12,9 @@ class Bizimki extends CI_Controller {
             }
             $this->load->view('bizimki', $page_data);
 	}
+        
+        function department_test() {
+            $this->load->model('departments');
+            var_dump($this->departments->get_departments_tests());
+        }
 }
